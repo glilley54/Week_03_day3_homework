@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>{{title}} - My Calculator</title>
+    </head>
+    <body>
+        <h1>My Calculator!</h1>
+        {% for sum in Calculator %}
+        <div>
+            <p>{{ sum.add }}: <b>{{ sum.subtract }}</b> <b>{{ sum.divide }}</b> <b>{{ sum.multiply}}</b></p>
+
+        </div>
+        {%endfor%}
+    </body>
+</html>
